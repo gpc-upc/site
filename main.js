@@ -13,3 +13,21 @@ navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
+
+// TABLA CON PAGINACIÓN
+$(document).ready(function () {
+  $('#tablaResultados').DataTable({
+    pageLength: 10,
+    lengthMenu: [10, 15],
+    language: {
+      search: "Buscar:",
+      lengthMenu: "Mostrar _MENU_ registros",
+      info: "Mostrando del _START_ al _END_ de _TOTAL_ registros",
+      paginate: {
+        next: "Siguiente",
+        previous: "Anterior"
+      },
+      zeroRecords: "No se encontraron resultados"
+    }
+  });
+});
