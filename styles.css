@@ -287,3 +287,13 @@ nav {
       font-size: 15px;
     }    
 }
+
+.dataTables_filter {
+  margin-bottom: 15px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #164173 !important;
+  color: white !important;
+  border: 1px solid #164173 !important;
+}
